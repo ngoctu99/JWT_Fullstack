@@ -1,8 +1,8 @@
 const homePage = (req, res) => {
 
-    return res.send("Hello, wellcome to homepage");
+    return res.render("homePage.ejs");
 }
 
 
 
-export { homePage };
+export { homePage }
