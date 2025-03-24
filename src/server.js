@@ -1,9 +1,8 @@
 import express from "express";
 import viewEngine from "./config/viewEngine.js";
 import router from "./routes/web.js";
-import dotenv from "dotenv";
+import "dotenv/config";
 import bodyParser from "body-parser";
-dotenv.config();
 
 
 const app = express();

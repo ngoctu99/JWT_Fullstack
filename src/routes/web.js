@@ -1,6 +1,6 @@
 import express from "express";
 import { homePage } from "../controller/homePageController.js";
-import { createNewUser, userPage } from "../controller/userPageController.js";
+import { createNewUser, deleteUser, userPage } from "../controller/userPageController.js";
 
 const router = express.Router();
 
@@ -8,5 +8,7 @@ const router = express.Router();
 router.get('/', homePage)
 router.get('/user', userPage)
 
-router.post('/users/create-user', createNewUser)
+router.post('/users/create-user', createNewUser);
+router.post('/delete-user/:userId', deleteUser);
+
 export default router;
